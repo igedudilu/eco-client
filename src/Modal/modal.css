@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.modal{
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal-content{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    
+    width: 50vw;
+    transform: scale(0.5);
+    transition: 0.4s all;
+
+} 
+.modal-content.active{
+    transform: scale(1);
+
+}
+.modal-header{
+   
+    font-size: 30px;
+    
+    font-weight: 500;
+}
+.modal-desc{
+    font-weight: 300;
+    font-size: 20px;
+
+}
+.sheet {
+    width: 520px;
+    height: 530px;
+}
+.table.tableizer-table {
+    font-size: 12px;
+    border: 1px solid #CCC; 
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px; 
+    padding: 15px;
+    text-align: left;
+    width: 150px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    padding: 10px;
+    text-align: left;
+    background-color: var(--dark-color); 
+    color: var(--grey-white);
+    font-weight: bold;
+}
+.tableizer-table tr:nth-child(even) {
+    background: var(--grey-white);
+} 

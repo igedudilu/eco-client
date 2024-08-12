@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    background-color: var(--grey-white); 
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+  }
+  .space{
+    height: 70px;
+  }
+  .top-image{
+    height: 500px;
+    background-color: black;
+  }
+  .vacancy-image{
+    width: 100vw;
+    height: 500px;
+    opacity: 0.5;
+    object-fit: cover;
+  }
+
+  .vhimg{
+    color: #fbf3ef;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+      font-family: "Montserrat", sans-serif; 
+      font-size: 35px;
+      font-weight: 500;
+      
+  }
+  .vimg-caption{
+    color: #fbf3ef;
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+      font-family: "Montserrat", sans-serif; 
+      font-size: 25px;
+      font-weight: 450;
+      top: 40%;
+      
+     
+  }
+
+  .second-block{
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    height: 750px;
+
+  
+}
+.vcontaner{
+  
+  background-color: var(--grey-white);
+}
+.vheader1{
+
+text-align: center;
+margin-top: 30px;
+font-family: "Montserrat", sans-serif;  
+  color: var(--text-color);
+  font-size: 33px;
+  font-weight: 500;
+color: var(--text-color);
+}
+.vheader2{
+  
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Montserrat", sans-serif;  
+    color: var(--text-color);
+    font-size: 27px;
+    font-weight: 450;
+  color: var(--text-color);
+  }
+ 
+.left-line{
+  margin-left: 0;
+  position: relative;
+  height: 700px;
+  width:140px;
+  clip-path: polygon(0 0, 60% 0, 60% 48%, 100% 57%, 60% 65%, 60% 100%, 0 100%);
+ 
+  background: linear-gradient(
+    45deg,
+    transparent 33.33%,
+    var(--light-blue) 33.33%,
+    rgba(0, 0, 0, 0.1) 66.66%,
+    transparent 66.66%
+  ), 
+var(--light-blue); 
+background-size: 20px 20px;
+}
+.vcards{
+  margin-left: 11%;
+  width: 76%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 250px 250px;
+  justify-items: center;
+}
+.vcard{
+  position: relative;
+  height:180px;
+  width:400px;
+  border: 1px solid var(--dark-color);
+    align-self: center; 
+    
+    max-height: 330px;
+    background-color: var(--white);
+    border-radius: 10px;
+     
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+      -4px -4px 12px rgba(0, 0, 0, 0.08);
+    
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    
+    background-color: var(--grey-white);
+}
+.vcard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.1),
+    -4px -4px 12px rgba(0, 0, 0, 0.08);
+}
+.vcard-grid{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 12% auto;
+  grid-template-rows: 30% auto 20%;
+  /* Автоматическое размещение в колонку */
+  
+}
+
+.vcard-left{
+  margin-top: 0%;
+  height: 100%;
+  width: 100%;
+  
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  grid-row: span 3;
+  background: linear-gradient(
+        45deg,
+        transparent 33.33%,
+        var(--light-blue) 33.33%,
+        rgba(0, 0, 0, 0.1) 66.66%,
+        transparent 66.66%
+      ), 
+	  var(--light-blue); 
+    background-size: 20px 20px;
+	
+
+}
+.vcard-title {
+  margin: auto;
+  margin-left: 8%;
+ 
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+font-weight: 600;
+color: var(--text-color);
+  cursor: default;
+  
+}
+
+
+.vcard-des {
+  margin-top: 2%;
+  margin-left: 8%;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  
+  line-clamp: 3; 
+  
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif; 
+font-weight: 600;
+  color:  var(--dark-color);
+  cursor: default;
+}
+.vcard-zp{
+  margin: auto;
+  margin-left: 8%;
+ 
+  font-size: 17px;
+  font-family: "Montserrat", sans-serif;
+font-weight: 500;
+color: var(--text-color);
+  cursor: default;
+}
+

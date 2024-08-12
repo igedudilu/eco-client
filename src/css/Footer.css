@@ -1,0 +1,43 @@
+.footer{
+    
+    background-color: var(--grey-white); 
+    
+    z-index: 1 !important;
+    
+    border-top: 3px solid var(--dark-color);
+    height: 140px;
+    margin-top: 0px;
+    overflow: hidden;
+    position: relative;
+    
+    
+
+
+.svg-footer{
+  color:var(--dark-color);
+}   
+    
+    
+}
+.inner{
+    width: 1200px; 
+    align-self: center;
+    font-family: "Montserrat", sans-serif; 
+  font-size: 18px;
+  font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    color: var(--text-color);
+    
+
+    justify-items: center;
+  
+   margin: 30px auto;
+
+
+   position: relative;
+}
+
+.contacts{
+  color: var(--dark-color);
+}
